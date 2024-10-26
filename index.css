@@ -19,4 +19,94 @@ body {
   width: 300px;
   background-color: lavender;
   border-radius: 10px;
+  position: absolute; /* position the element */
+  animation-name: move; /* name of the animation */
+  animation-duration: 3s; /* duration of the animation */
+  animation-delay: 1s; /* delay the animation */
+  animation-fill-mode: forwards; /* keep the last keyframe */
+  animation-iteration-count: infinite; /* infinite the animation */
+  animation-direction: alternate; /* alternate the animation */
+  animation-timing-function: ease-in-out; /* timing function */
+
+}
+
+/* css animations */
+/* @keyframes move {
+  0% {
+    left: 0;
+    top:  0;
+    background-color: red;
+  }
+  50% {
+    left: 70%;
+    top:  0%;
+    background-color: green;
+  }
+  100% {
+    left: 70%;
+    top: 50%;
+    background-color: blue;
+  }
+} */
+
+h1{
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* 
+h1::after{
+  content: 'after';
+  background-color: aqua;
+  font-size: medium;
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+}
+
+h1::before{
+  content: 'before';
+  background-color: red;
+  font-size: medium;
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+
+} */
+
+#circle {
+  height: 300px;
+  width: 300px;
+  background-color: lavender;
+  border-radius: 50%;
+}
+
+#box1{
+  height: 300px;
+  width: 300px;
+  background-color: lavender;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#box2{
+  height: 300px;
+  width: 300px;
+  background-color: lavender;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#box3{
+  height: 300px;
+  width: 300px;
+  background-color: lavender;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
