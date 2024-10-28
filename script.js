@@ -59,37 +59,44 @@
 // });
 
 
-gsap.to('#page1 #box', {
-  scale: 0,
-  rotation: 360,
-  duration: 1,
-  delay: 1,
-})
+// gsap.to('#page1 #box', {
+//   scale: 0,
+//   rotation: 360,
+//   duration: 1,
+//   delay: 1,
+// })
 
-gsap.to('#page2 #box', {
-  scale: 0,
-  rotation: 360,
-  duration: 1,
-  scrollTrigger: {  // this will trigger the animation when the element is in the viewport
-    trigger: '#page2 #box',
-    scroller: 'body', // this will make the animation work when the element is in the viewport
-    markers: true, // this will show the markers in the viewport
-    start: 'top 50%', // this will start the animation when the element is in the middle of the viewport
-    scrub: 2, // this will make the animation smooth
-    end: 'top 30%', // this will end the animation when the element is in the middle of the viewport
-  }
-})
+// gsap.to('#page2 #box', {
+//   scale: 0,
+//   rotation: 360,
+//   duration: 1,
+//   scrollTrigger: {  // this will trigger the animation when the element is in the viewport
+//     trigger: '#page2 #box',
+//     scroller: 'body', // this will make the animation work when the element is in the viewport
+//     markers: true, // this will show the markers in the viewport
+//     start: 'top 50%', // this will start the animation when the element is in the middle of the viewport
+//     scrub: 2, // this will make the animation smooth
+//     end: 'top 30%', // this will end the animation when the element is in the middle of the viewport
+//   }
+// })
 
-gsap.to('#page3 #box', {
-  x: 600,
-  duration: 2,
-  scrollTrigger: {
-    trigger: '#page3 #box',
-    scroller: 'body',
-    markers: true,
-    start: 'top 60%',
-    scrub: 2, // animation will happen based on scroll
-    end: 'top 30%',
-    pin: true, // this will pin the element in the viewport
-  }
-})
+// gsap.to('#page3 #box', {
+//   x: 600,
+//   duration: 2,
+//   scrollTrigger: {
+//     trigger: '#page3 #box',
+//     scroller: 'body',
+//     markers: true,
+//     start: 'top 60%',
+//     scrub: 2, // animation will happen based on scroll
+//     end: 'top 30%',
+//     pin: true, // this will pin the element in the viewport
+//   }
+// })
+
+// locomotive js
+var scroll = new locomotiveScroll({
+  el: document.querySelector('[data-scroll-container]'),
+  smooth: true,
+  lerp: 0.01,
+});

@@ -4,10 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div id="page1">
+
+    <div id="main" data-scroll-container>
+      <div id="page1" data-scroll></div>
+      <div id="page2" data-scroll>
+        <div id="box" data-scroll ></div>
+        <div id="box" data-scroll-direction="horizontal" data-scroll data-scroll-speed="2"></div>
+        <div id="box" data-scroll ></div>
+      </div>
+      <div id="page3" data-scroll></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div id="page1">
       <div id="box"></div>
     </div>
     <div id="page2">
@@ -17,10 +45,7 @@
       <div id="box"></div>
     </div>
     <div id="page4">
-    </div>
-
-
-
+    </div> -->
 
     <!-- <div id="box"></div> -->
     <!-- <h1>John Doe</h1>
@@ -31,6 +56,9 @@
     <!-- <div id="box1"></div>
     <div id="box2"></div>
     <div id="box3"></div> -->
+
+    <!-- locomotive-scroll.js -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 
 
     <script
