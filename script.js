@@ -95,8 +95,22 @@
 // })
 
 // locomotive js
-var scroll = new locomotiveScroll({
-  el: document.querySelector('[data-scroll-container]'),
-  smooth: true,
-  lerp: 0.01,
-});
+// var scroll = new locomotiveScroll({
+//   el: document.querySelector('[data-scroll-container]'),
+//   smooth: true,
+//   lerp: 1,
+// });
+
+// lenis
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
