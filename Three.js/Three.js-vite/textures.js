@@ -35,7 +35,7 @@ let height = loader.load('./text/height.png')
 
 // Create a box geometry and apply the loaded texture
 const geometry = new THREE.BoxGeometry(3, 2, 2);
-const material = new THREE.MeshStandardMaterial({ map: texture, roughnessMap: roughness, normalMap: normal});
+const material = new THREE.MeshStandardMaterial({ map: texture, roughnessMap: roughness, normalMap: normal });
 const cube = new THREE.Mesh(geometry, material);
 
 // Add the cube to the scene

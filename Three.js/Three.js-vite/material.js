@@ -27,8 +27,8 @@ scene.add(directionalLight);
 
 // Create a box geometry and a basic material and combine them into a mesh
 // const geometry = new THREE.SphereGeometry(1,10,10);
-const geometry = new THREE.BoxGeometry(2,2,3,10,10,true);
-const material = new THREE.MeshStandardMaterial({ color: 0x00ff00, roughness: .8, metalness: .3}); //Three.DoubleSide is used to show the back side of the cylinder
+const geometry = new THREE.BoxGeometry(2, 2, 3, 10, 10, true);
+const material = new THREE.MeshStandardMaterial({ color: 0x00ff00, roughness: .8, metalness: .3 }); //Three.DoubleSide is used to show the back side of the cylinder
 const cube = new THREE.Mesh(geometry, material);
 
 
