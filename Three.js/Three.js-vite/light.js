@@ -12,7 +12,6 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
-
 // lighting
 let ambient = new THREE.AmbientLight(0xffffff, 2); // soft white light
 scene.add(ambient);
@@ -38,7 +37,7 @@ let loader = new THREE.TextureLoader();
 let texture = loader.load('./text/color.jpg');
 let roughness = loader.load('./text/roughness.jpg')
 let normal = loader.load('./text/normal.jpg')
-let height = loader.load('./text/height.png')
+// let height = loader.load('./text/height.png')
 
 
 // Create a box geometry and apply the loaded texture
